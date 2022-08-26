@@ -1,7 +1,3 @@
-html {
-    font-family: 'Indie Flower', cursive;
-}
-
 :root {
     --primary: #A5C882;
     --secondary: #D33F49;
@@ -11,10 +7,20 @@ html {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
     margin: 0;
-    height: 100vh;
     background-color: var(--diabled);
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(250, 69, 160);
+    background-color: #c182c8;
 }
 
 *:first-letter {
@@ -114,4 +120,30 @@ input:focus {
     background-color: var(--diabled);
     text-decoration: line-through;
     color: var(--dark);
+}
+
+footer {
+
+    background-color: #222;
+    padding: 1rem;
+    color: #fff;
+    margin-top: auto;
+}
+
+
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    float: right;
+
+}
+
+footer a:hover {
+    color: cornflowerblue;
 }

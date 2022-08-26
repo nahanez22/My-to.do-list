@@ -15,28 +15,29 @@
         <h1>Mi lista de tareas</h1>
     </header>
 
-    <section class="list roundBorder">
-        <article class="date">
-            <article class="dateRight">
-                <section id="dateNumber"></section>
-                <section>
-                    <article id="dateMonth"></article>
-                    <article id="dateYear"></article>
-                </section>
-
-                <article id="dateText"></article>
-
-            </article>
-
-        </article>
-        <form onsubmit="addNewtask(event)">
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+        <form onsubmit="addNewTask(event)">
             <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
             <button type="submit" class="addTaskButton">+</button>
             <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
         </form>
-        <article id="tasksContainer"></article>
-    </section>
+        <div id="tasksContainer"></div>
+    </div>
     <script src="file:///C:/Users/USUARIO/Documents/todo-lits/index.js"></script>
+    <footer>
+        <a href="mailto:nahumatencio@gmail.com">Contáctame aquí</a>
+        <p>Copyright 2022</p>
+    </footer>
 </body>
 
 </html>
